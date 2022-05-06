@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA Universe</title>
+
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-svg" />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <div id="page-container">
+      <nav>
+        <ul>
+          <li>
+            <img src="./assets/logo.svg" alt="Ícone do universo" />
+          </li>
+          <li>
+            <a href="/" class="page-link" onclick="changePage()"> Home </a>
+          </li>
+          <li>
+            <a href="/universe" class="page-link" onclick="changePage()">
+              O Universo
+            </a>
+          </li>
+          <li>
+            <a href="/exploration" class="page-link" onclick="changePage()">
+              Exploração
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="page-content"></div>
+    </div>
+
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
